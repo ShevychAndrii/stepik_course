@@ -1,2 +1,2 @@
-# stepik_course
-Automation with Selenium and Python
+# Stepik Web course.
+Web automation with Selenium and Python.
