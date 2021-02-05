@@ -28,13 +28,6 @@ def answer() -> str:
     return str(math.log(int(time.time())))
 
 
-@pytest.fixture(scope='function')
-def browser():
-    browser = webdriver.Chrome()
-    yield browser
-    browser.quit()
-
-
 @pytest.mark.parametrize('url', urls)
 def test_check_the_feedback(browser, url):
     browser.get(url)
